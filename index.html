@@ -216,7 +216,7 @@ footer{background:var(--ink);border-top:1px solid var(--border);padding:28px 64p
     <div class="hero-tag"><span class="pulse"></span>The Quad Collective Presents</div>
     <h1 class="hero-title">QUAD<br><em>INNOVATION</em><br>2026</h1>
     <p class="hero-desc">Nigeria's boldest youth-led tech and innovation competition. Bring your idea. Build your future.</p>
-    <p class="hero-date">Registration Open: <strong>April 1 &ndash; May 31, 2026</strong></p>
+    <p class="hero-date">Registration Open: <strong>April 15 &ndash; May 31, 2026</strong></p>
     <div class="hero-ctas">
       <a href="#register" class="btn-main">Register Now &mdash; &#x20A6;2,500</a>
       <a href="#prizes" class="btn-ghost">View Prizes</a>
@@ -297,7 +297,7 @@ footer{background:var(--ink);border-top:1px solid var(--border);padding:28px 64p
     <div class="rule"></div>
     <div class="tl-wrap">
       <div class="tl now">
-        <div class="tl-d">April 1, 2026</div>
+        <div class="tl-d">April 15, 2026</div>
         <div class="tl-e">Registration Opens</div>
         <div class="tl-n">Pay &#x20A6;2,500 and submit your application today.</div>
         <span class="tl-live">Open Now</span>
@@ -392,26 +392,30 @@ footer{background:var(--ink);border-top:1px solid var(--border);padding:28px 64p
     <div class="form-wrap" id="registrationForm">
 
       <!-- A: Personal -->
-      <div class="form-block">
-        <div class="form-block-head">
-          <div class="form-block-letter">A</div>
-          <div class="form-block-title">Personal Information</div>
-        </div>
-        <div class="fields">
-          <div>
-            <div class="flabel">Full Name *</div>
-            <input class="finput" id="fullName" type="text" placeholder="e.g. Aisha Balogun">
-          </div>
-          <div>
-            <div class="flabel">Phone Number *</div>
-            <input class="finput" id="phone" type="tel" placeholder="+234 800 000 0000">
-          </div>
-          <div>
-            <div class="flabel">Email Address *</div>
-            <input class="finput" id="email" type="email" placeholder="you@example.com">
-          </div>
-          <div>
-            <div class="flabel">Date of Birth *</div>
+      <form name="contact-form" method="POST" data-netlify="true">
+  <div class="form-block">
+    <div class="form-block-head">
+      <div class="form-block-letter">A</div>
+      <div class="form-block-title">Personal Information</div>
+    </div>
+    <div class="fields">
+      <div>
+        <div class="flabel">Full Name *</div>
+        <input class="finput" id="fullName" name="full_name" type="text" placeholder="e.g. Aisha Balogun" required>
+      </div>
+      <div>
+        <div class="flabel">Phone Number *</div>
+        <input class="finput" id="phone" name="phone" type="tel" placeholder="+234 800 000 0000" required>
+      </div>
+      <div>
+        <div class="flabel">Email Address *</div>
+        <input class="finput" id="email" name="email" type="email" placeholder="you@example.com" required>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="submit-btn">Send Application</button>
+</form>
+      <div class="flabel">Date of Birth *</div>
             <input class="finput" id="dob" type="text" placeholder="DD / MM / YYYY">
           </div>
           <div class="field-full">
